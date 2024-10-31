@@ -1,0 +1,172 @@
+{
+    "movie": {
+        "oid": "movie:eLOJ5JE5RjenqOp-poU1DQ",
+        "title": "Movie 3",
+        "synopsis": "syn",
+        "description": "",
+        "age": 2,
+        "air_date": "2024-07-23",
+        "assets": [
+            "asset:6",
+            "asset:7"
+        ],
+        "versions": [
+            "version:6",
+            "version:4"
+        ],
+        "genres": [
+            "genre:2",
+            "genre:1"
+        ],
+        "labels": [
+            "label:1"
+        ],
+        "participants": [
+            "participant:1"
+        ],
+        "trailers": [
+            "trailer:N5z83wBCSM2hrvaXGORFbw",
+            "trailer:2_JjyI6RQeKPUSp6pLZ_pA",
+            "trailer:lRgstFewT8msxZ5bXquEcw",
+            "trailer:XGLmRzwDSXCaY91s36GtHg"
+        ],
+        "fragments": [
+            "fragment:G_v9T06XSziHBiWa-CnnTQ"
+        ]
+    },
+    "assets": [
+        {
+            "oid": "asset:6",
+            "asset_type": "poster",
+            "resize_url": "http://localhost:8000/media/600x800_eZacyfc.jpg?w={w}&h={h}"
+        },
+        {
+            "oid": "asset:7",
+            "asset_type": "additional",
+            "resize_url": "http://localhost:8000/media/2024-07-09_13-41_yYEMQwZ.png?w={w}&h={h}"
+        },
+        {
+            "oid": "asset:8",
+            "asset_type": "additional",
+            "resize_url": "http://localhost:8000/media/assets/asset/8/1bc88abdfad1465ca2386a54d70cbccf.jpg?w={w}&h={h}"
+        },
+        {
+            "oid": "asset:9",
+            "asset_type": "additional",
+            "resize_url": "http://localhost:8000/media/assets/asset/2_JjyI6RQeKPUSp6pLZ_pA/16859b26887f4193bd572c7568f774c4.jpg?w={w}&h={h}"
+        },
+        {
+            "oid": "asset:10",
+            "asset_type": "additional",
+            "resize_url": "http://localhost:8000/media/content/trailer/XGLmRzwDSXCaY91s36GtHg/efc287edf83049f99fdf0d411888c912.jpg?w={w}&h={h}"
+        },
+        {
+            "oid": "asset:11",
+            "asset_type": "additional",
+            "resize_url": "http://localhost:8000/media/content/trailer/28/8f8f2b6f31404427a2efb2f179083f4d.jpg?w={w}&h={h}"
+        },
+        {
+            "oid": "asset:12",
+            "asset_type": "avatar",
+            "resize_url": "http://localhost:8000/media/metadata/person/1/979411a4f689481e8723e38bc41f6b55.jpg?w={w}&h={h}"
+        },
+        {
+            "oid": "asset:13",
+            "asset_type": "additional",
+            "resize_url": "http://localhost:8000/media/content/fragment/G_v9T06XSziHBiWa-CnnTQ/1e1159d057cc49f6a2ff142a232af9e9.png?w={w}&h={h}"
+        }
+    ],
+    "versions": [
+        {
+            "oid": "version:4",
+            "age": 2,
+            "manifest_url": "http://webdav.localhost/results/23f0c9ec724e4dd29f64b0ba5caa8f58/index.m3u8"
+        },
+        {
+            "oid": "version:6",
+            "age": 0,
+            "manifest_url": "http://webdav.localhost/results/3d2abf94748248438fa2f844364b14db/index.m3u8"
+        },
+        {
+            "oid": "version:7",
+            "age": 0,
+            "manifest_url": "http://webdav.localhost/results/3d2abf94748248438fa2f844364b14db/index.m3u8"
+        },
+        {
+            "oid": "version:8",
+            "age": 0,
+            "manifest_url": "http://webdav.localhost/results/23f0c9ec724e4dd29f64b0ba5caa8f58/index.m3u8"
+        }
+    ],
+    "persons": [
+        {
+            "oid": "person:1",
+            "first_name": "Андрей",
+            "last_name": "Тихонов",
+            "assets": [
+                "asset:12"
+            ]
+        }
+    ],
+    "participants": [
+        {
+            "oid": "participant:1",
+            "person": "person:1",
+            "job": "job:1",
+            "character": "Андерй"
+        }
+    ],
+    "trailers": [
+        {
+            "oid": "trailer:N5z83wBCSM2hrvaXGORFbw",
+            "number": 1,
+            "title": null,
+            "assets": [
+                "asset:8"
+            ],
+            "versions": []
+        },
+        {
+            "oid": "trailer:2_JjyI6RQeKPUSp6pLZ_pA",
+            "number": 2,
+            "title": null,
+            "assets": [
+                "asset:9"
+            ],
+            "versions": []
+        },
+        {
+            "oid": "trailer:XGLmRzwDSXCaY91s36GtHg",
+            "number": 5,
+            "title": null,
+            "assets": [
+                "asset:10"
+            ],
+            "versions": [
+                "version:7"
+            ]
+        },
+        {
+            "oid": "trailer:lRgstFewT8msxZ5bXquEcw",
+            "number": 4,
+            "title": null,
+            "assets": [
+                "asset:11"
+            ],
+            "versions": []
+        }
+    ],
+    "fragments": [
+        {
+            "oid": "fragment:G_v9T06XSziHBiWa-CnnTQ",
+            "number": 2,
+            "title": "M3-F1",
+            "assets": [
+                "asset:13"
+            ],
+            "versions": [
+                "version:8"
+            ]
+        }
+    ]
+}

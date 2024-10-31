@@ -1,0 +1,11 @@
+services:
+  nuxt:
+    build:
+      context: .
+      dockerfile: ./deploy/app/Dockerfile
+      args:
+        NUXT_SITE_FAVICON: ${NUXT_SITE_FAVICON:-/favicon.png}
+    image: ${CI_REGISTRY_IMAGE:-docker.just-work.org/test-projects/}web-app:${CI_COMMIT_REF_SLUG:-develop}
+    environment:
+      - NUXT_SITE_FAVICON=${NUXT_SITE_FAVICON:-/favicon.png}
+      - NUXT_PUBLIC_API_BASE=${NUXT_PUBLIC_API_BASE}

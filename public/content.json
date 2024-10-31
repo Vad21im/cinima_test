@@ -1,0 +1,18 @@
+[
+  {
+    "id": "werwerwr234wer",
+    "title": "Заголовок фильма",
+    "description": "Описание фильма",
+    "release_date": "12-12-2012",
+    "duration": 234,
+    "type": "movie"
+  },
+  {
+    "id": "werwerwr234wer",
+    "title": "Заголовок фильма1",
+    "description": "Описание фильма1",
+    "release_date": "12-12-2012",
+    "duration": 2342,
+    "type": "movie"
+  }
+]

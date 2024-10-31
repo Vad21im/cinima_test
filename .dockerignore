@@ -1,0 +1,10 @@
+.husky
+.vscode
+node_modules
+.eslintrc.cjs
+.gitignore
+.gitlab-ci.yml
+.gitlab-ci.jw.yml
+.prettierignore
+.prettierrc.json
+README.md

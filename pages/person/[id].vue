@@ -1,26 +1,26 @@
 <script setup lang="ts">
-import { useMainPageStore } from "~/stores/main-page";
-import { usePersonStore } from "~/stores/person";
-import { getIdFromOID } from "~/utils";
-import AppContentCardVertical from "@/components/app/content/card-vertical.vue";
-import AppContentCard from "@/components/app/content/card.vue";
+import { useMainPageStore } from "~/stores/main-page"
+import { usePersonStore } from "~/stores/person"
+import { getIdFromOID } from "~/utils"
+import AppContentCardVertical from "@/components/app/content/card-vertical.vue"
+import AppContentCard from "@/components/app/content/card.vue"
 
 definePageMeta({
   layout: "default",
 });
 
 const route = useRoute()
-const pageStore = useMainPageStore();
-await pageStore.loadData();
+const pageStore = useMainPageStore()
+await pageStore.loadData()
 
 const personStore = usePersonStore()
-await personStore.loadData(route.params.id);
+await personStore.loadData(route.params.id)
 
 const cardComponent = (collectionKind) => {
   return collectionKind === "vertical"
     ? AppContentCardVertical
-    : AppContentCard;
-};
+    : AppContentCard
+}
 
 const collections = computed(()=>{
   const filter = ["ФИЛЬМЫ", "Интересные фрагменты", "Новинки"]
@@ -28,7 +28,8 @@ const collections = computed(()=>{
   'ФИЛЬМЫ': 1,
   'Интересные фрагменты': 2,
   'Новинки': 3
-  };
+  }
+  
   let pageStoreFiltered = pageStore?.page?.collections?.filter(e=>{
     return filter.includes(e.name)
   }).sort((a, b) => {
@@ -36,8 +37,7 @@ const collections = computed(()=>{
   const bPriority = priority[b.name] || Infinity;
 
   return aPriority - bPriority;
-})
-  console.log(pageStoreFiltered)
+  })
   return pageStoreFiltered
 })
 

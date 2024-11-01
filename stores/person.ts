@@ -9,20 +9,20 @@ export const usePersonStore = defineStore("person", () => {
 
   const loadData = async (person_id) => {
     const fetcher = async () => {
-      const fetch = useNuxtApp().$apiNg;
+      const fetch = useNuxtApp().$apiNg
 
-      const person = await fetch(API_PERSON_CONTENT(person_id));
+      const person = await fetch(API_PERSON_CONTENT(person_id))
       return { person };
-    };
+    }
 
     const { data } = await useAsyncData(
       "person",
       async () => await fetcher(),
       { deep: false },
-    );
+    )
 
-    person.value = data.value?.person;
+    person.value = data.value?.person
   }
 
-  return { person,  loadData };
-});
+  return { person,  loadData }
+})
